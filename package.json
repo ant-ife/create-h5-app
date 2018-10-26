@@ -12,7 +12,7 @@
     "lint": "eslint --fix .",
     "test": "npm run lint && ava --verbose test",
     "test:snapshot": "ava --verbose --update-snapshots test",
-    "publish": "np"
+    "publish": "np --yolo"
   },
   "repository": {
     "type": "git",

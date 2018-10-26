@@ -1,8 +1,23 @@
-# vue-webpack-starter-kit
+# create apfe app
 
 [中文版](./README.zh.md)
 
 ---
+
+[![NPM version][npm-image]][npm-url]
+[![build status][travis-image]][travis-url]
+[![Test coverage][codecov-image]][codecov-url]
+[![node version][node-image]][node-url]
+[![npm download][download-image]][download-url]
+
+[npm-image]: https://img.shields.io/npm/v/create-apfe-app.svg?style=flat-square&logo=npm
+[npm-url]: https://npmjs.org/package/create-apfe-app
+[travis-image]: https://img.shields.io/travis/ant-ife/create-apfe-app.svg?style=flat-square&logo=travis
+[travis-url]: https://travis-ci.org/ant-ife/create-apfe-app
+[codecov-image]: https://img.shields.io/codecov/c/github/ant-ife/create-apfe-app.svg?style=flat-square&logo=javascript
+[codecov-url]: https://codecov.io/gh/ant-ife/create-apfe-app
+[node-image]: https://img.shields.io/badge/node.js-%3E=_8-green.svg?style=flat-square&logo=node.js
+[node-url]: http://nodejs.org/download/
 
 > Build vue application quickly based on webpack4.0
 
