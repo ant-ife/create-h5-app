@@ -1,6 +1,6 @@
 {
   "name": "create-apfe-app",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "apfe app starter kit.",
   "bin": "cli.js",
   "files": [
