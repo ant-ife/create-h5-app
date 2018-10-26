@@ -1,39 +1,39 @@
-'use strict'
+'use strict';
 
-const fs = require('fs')
-const path = require('path')
-const webpack = require('webpack')
-const VueLoaderPlugin = require('vue-loader/lib/plugin')
-const CopyWebpackPlugin = require('copy-webpack-plugin')
-const HtmlWebpackPlugin = require('html-webpack-plugin')
-const MiniCssExtractPlugin = require('mini-css-extract-plugin')
-const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin
-const DataHub = require('macaca-datahub')
-const datahub = new DataHub()
+const fs = require('fs');
+const path = require('path');
+const webpack = require('webpack');
+const VueLoaderPlugin = require('vue-loader/lib/plugin');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
+const DataHub = require('macaca-datahub');
+const datahub = new DataHub();
 
 function resolve (dir) {
-  return path.join(__dirname, dir)
+  return path.join(__dirname, dir);
 }
 
 const alias = fs.readdirSync(resolve('src')).reduce((memo, f) => {
-  memo[f] = resolve(`src/${f}`)
-  return memo
-}, {})
+  memo[f] = resolve(`src/${f}`);
+  return memo;
+}, {});
 
-const entryPath = path.join(__dirname, 'src/entry')
+const entryPath = path.join(__dirname, 'src/entry');
 
 const entries = fs.readdirSync(entryPath)
   .reduce((o, filename) => {
     o[filename] = [
       // 'core-js/fn/promise',
       path.join(entryPath, filename, 'index.js'),
-    ]
-    return o
-  }, {})
+    ];
+    return o;
+  }, {});
 
 module.exports = (env, argv) => {
-  const isProduction = argv.mode === 'production'
-  const publicPath = isProduction ? '' : '/'
+  const isProduction = argv.mode === 'production';
+  const publicPath = isProduction ? '' : '/';
 
   const webpackConfig = {
 
@@ -117,8 +117,8 @@ module.exports = (env, argv) => {
               loader: 'file-loader',
               options: {
                 name: isProduction ? '[name].[hash:7].[ext]' : '[name][hash].[ext]',
-                publicPath: isProduction ? '../static' : '',
-                outputPath: isProduction ? 'static' : '',
+                publicPath: isProduction ? '../asset' : '',
+                outputPath: isProduction ? 'asset' : '',
               },
             },
           },
@@ -177,7 +177,7 @@ module.exports = (env, argv) => {
         datahub.startServer({
           port: 5678,
           store: path.join(__dirname, 'data'),
-        })
+        });
       },
     },
 
@@ -204,16 +204,16 @@ module.exports = (env, argv) => {
       },
       runtimeChunk: 'single',
     },
-  }
+  };
 
   if (!isProduction) {
-    webpackConfig.plugins.push(new webpack.HotModuleReplacementPlugin())
+    webpackConfig.plugins.push(new webpack.HotModuleReplacementPlugin());
   }
 
   if (process.env.npm_config_report) {
-    webpackConfig.plugins.push(new BundleAnalyzerPlugin())
+    webpackConfig.plugins.push(new BundleAnalyzerPlugin());
   }
 
-  return webpackConfig
-}
+  return webpackConfig;
+};
 
