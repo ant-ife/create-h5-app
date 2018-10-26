@@ -1,0 +1,11 @@
+{
+  "protocol": "http",
+  "pathname": "init.json",
+  "method": "ALL",
+  "projectUniqId": "2ef78b32-caea-4b49-9d5f-fff8e252c0e1",
+  "description": "init mock",
+  "currentScene": "default",
+  "proxyConfig": {},
+  "contextConfig": {},
+  "uniqId": "ddbfc46d-6eca-460c-b970-ac7eb1732817"
+}

@@ -1,0 +1,30 @@
+import Vue from 'vue'
+import Router from 'vue-router'
+const Home = () => import(/* webpackChunkName: "router-tornado-home" */ 'views/tornado/Home')
+
+Vue.use(Router)
+
+const router = new Router({
+  saveScrollPosition: true,
+  routes: [
+    {
+      path: '/',
+      name: 'Home',
+      component: Home,
+    },
+  ],
+})
+
+// Router Interceptors
+// router.beforeEach((to, from, next) => {
+// next()
+// })
+
+// router.beforeResolve((to, from, next) => {
+// next()
+// })
+
+// router.afterEach((to, from) => {
+// })
+
+export default router

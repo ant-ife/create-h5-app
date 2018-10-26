@@ -1,0 +1,36 @@
+{
+  "name": "create-apfe-app",
+  "version": "0.1.0",
+  "description": "apfe app starter kit.",
+  "bin": "cli.js",
+  "files": [
+    "cli.js",
+    "sao.js",
+    "template"
+  ],
+  "scripts": {
+    "lint": "eslint --fix .",
+    "test": "npm run lint && ava --verbose test",
+    "test:snapshot": "ava --verbose --update-snapshots test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ant-ife/create-apfe-app.git"
+  },
+  "author": "Yuheng Zhang <zhangyuheng91@gmail.com> (http://zyhack.cn)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ant-ife/create-apfe-app/issues"
+  },
+  "homepage": "https://github.com/ant-ife/create-apfe-app#readme",
+  "dependencies": {
+    "chalk": "^2.4.1",
+    "sao": "^0.22.17",
+    "superb": "^3.0.0"
+  },
+  "devDependencies": {
+    "ava": "^0.25.0",
+    "eslint": "^5.7.0",
+    "eslint-config-antife": "^1.0.3"
+  }
+}
