@@ -11,7 +11,8 @@
   "scripts": {
     "lint": "eslint --fix .",
     "test": "npm run lint && ava --verbose test",
-    "test:snapshot": "ava --verbose --update-snapshots test"
+    "test:snapshot": "ava --verbose --update-snapshots test",
+    "publish": "np"
   },
   "repository": {
     "type": "git",
@@ -31,6 +32,7 @@
   "devDependencies": {
     "ava": "^0.25.0",
     "eslint": "^5.7.0",
-    "eslint-config-antife": "^1.0.3"
+    "eslint-config-antife": "^1.0.3",
+    "np": "^3.0.4"
   }
 }
