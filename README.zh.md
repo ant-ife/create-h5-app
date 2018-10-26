@@ -4,7 +4,7 @@
 
 ---
 
-> 基于 Webpack 4.0 快速构建 Vue 应用
+> 基于 Webpack 快速构建 Vue 应用
 
 ## 介绍
 

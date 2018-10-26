@@ -21,7 +21,7 @@
 [download-image]: https://img.shields.io/npm/dm/create-apfe-app.svg?style=flat-square&logo=npm
 [download-url]: https://npmjs.org/package/create-apfe-app
 
-> Build vue application quickly based on webpack4.0
+> Build vue application quickly based on webpack
 
 ## Introduction
 
