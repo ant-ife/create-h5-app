@@ -18,6 +18,8 @@
 [codecov-url]: https://codecov.io/gh/ant-ife/create-apfe-app
 [node-image]: https://img.shields.io/badge/node.js-%3E=_8-green.svg?style=flat-square&logo=node.js
 [node-url]: http://nodejs.org/download/
+[download-image]: https://img.shields.io/npm/dm/create-apfe-app.svg?style=flat-square&logo=npm
+[download-url]: https://npmjs.org/package/create-apfe-app
 
 > Build vue application quickly based on webpack4.0
 
