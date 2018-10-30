@@ -12,6 +12,13 @@
 
 ## 使用
 
+### 创建项目
+
+```bash
+$ npm i create-apfe-app -g
+$ create-apfe-app [path/to/project]
+```
+
 ### 快速构建
 
 ```bash

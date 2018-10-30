@@ -36,6 +36,21 @@ $ npm i create-apfe-app -g
 $ create-apfe-app [path/to/project]
 ```
 
+### Build project
+
+```bash
+$ npm i
+$ npm run dev
+$ npm run build
+```
+
+### Test project
+
+```bash
+$ npm run dev:test
+$ npm run test
+```
+
 ## Features
 
 - 🚪 Build single entry and multiple entry applications.
