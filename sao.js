@@ -1,4 +1,4 @@
-const superb = require('superb');
+const superb = require('superb')
 
 module.exports = {
   prompts: {
@@ -6,8 +6,8 @@ module.exports = {
       message: 'What is the name of the project',
       default: () => process.argv[2] || ':folderName:',
       validate: val => {
-        if (process.env.NODE_ENV === 'test' && val === 'apfe') return true;
-        return /^\w[\w-]*$/.test(val);
+        if (process.env.NODE_ENV === 'test' && val === 'apfe') return true
+        return /^\w[\w-]*$/.test(val)
       },
     },
     description: {
@@ -31,7 +31,7 @@ module.exports = {
     '_stylelintrc.js': '.stylelintrc.js',
   },
   post: async ctx => {
-    ctx.gitInit();
-    ctx.showTip();
+    ctx.gitInit()
+    ctx.showTip()
   },
-};
+}
