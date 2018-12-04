@@ -59,8 +59,9 @@
     "webpack-dev-server": "^3.1.5",
     "whatwg-fetch": "^2.0.4"
   },
+  "dependencies": {
+    "@babel/polyfill": "^7.0.0"
+  },
   "engines": {
     "node": "8"
   },
-  "license": "MIT"
-}
