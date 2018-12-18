@@ -26,7 +26,7 @@
     "copy-webpack-plugin": "^4.5.2",
     "cross-env": "^5.2.0",
     "css-loader": "^0.28.11",
-    "ejs-compiled-loader": "^1.1.0",
+    "awesome-ejs-compiled-loader": "^1.0.0",
     "eslint": "^5.0.1",
     "eslint-config-antife": "^1.0.2",
     "eslint-plugin-babel": "^5.1.0",
