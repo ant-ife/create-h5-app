@@ -152,7 +152,7 @@ module.exports = (env, argv) => {
       ...Object.keys(entries).map(name =>
         new HtmlWebpackPlugin({
           filename: `${name}.html`,
-          template: `!!ejs-compiled-loader!src/entry/${name}/index.html`,
+          template: `!!awesome-ejs-compiled-loader!src/entry/${name}/index.html`,
           inject: true,
           minify: isProduction ? {
             removeComments: true,
