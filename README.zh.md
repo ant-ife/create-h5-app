@@ -4,7 +4,7 @@
 
 ---
 
-> 基于 Webpack 快速构建 Vue 应用
+> 一个 Vue 应用的初始化模版。
 
 ## 介绍
 
@@ -17,6 +17,12 @@
 ```bash
 $ npm i create-apfe-app -g
 $ create-apfe-app [path/to/project]
+```
+
+更多选项请查看帮助：
+
+```bash
+$ create-apfe-app --help
 ```
 
 ### 快速构建

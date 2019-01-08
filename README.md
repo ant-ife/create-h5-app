@@ -21,7 +21,7 @@
 [download-image]: https://img.shields.io/npm/dm/create-apfe-app.svg?style=flat-square&logo=npm
 [download-url]: https://npmjs.org/package/create-apfe-app
 
-> Build vue application quickly based on webpack
+> Yet Another Vue App Starter Kit.
 
 ## Introduction
 
@@ -34,6 +34,12 @@ A simplified template for vue single-page applications.
 ```bash
 $ npm i create-apfe-app -g
 $ create-apfe-app [path/to/project]
+```
+
+For more options, please read usage:
+
+```bash
+$ create-apfe-app --help
 ```
 
 ### Build project
