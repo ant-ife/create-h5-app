@@ -2,31 +2,10 @@ import path from 'path'
 import test from 'ava'
 import sao from 'sao'
 
-const template = path.join(__dirname, '..')
-
-const getPkgFields = pkg => {
-  pkg = JSON.parse(pkg)
-  delete pkg.description
-  return pkg
-}
-
-const verifyPkg = async (t, answers) => {
-  const stream = await sao.mockPrompt(template, answers)
-
-  const pkg = stream.fileContents('package.json')
-  t.snapshot(stream.fileList, 'Generated files')
-  t.snapshot(getPkgFields(pkg), 'package.json')
-}
+const generator = path.join(__dirname, '..')
 
 test('defaults', async t => {
-  await verifyPkg(t, {
-    name: 'san',
-  })
-})
+  const stream = await sao.mock({ generator })
 
-test('custom description', async t => {
-  await verifyPkg(t, {
-    name: 'san',
-    description: 'description',
-  })
+  t.snapshot(stream.fileList, 'Generated files')
 })
