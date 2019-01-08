@@ -1,12 +1,12 @@
 {
   "name": "create-apfe-app",
   "version": "1.0.3",
-  "description": "apfe app starter kit.",
-  "bin": "cli.js",
+  "description": "another vue app starter kit",
+  "bin": "bin/cli.js",
   "files": [
-    "cli.js",
-    "sao.js",
-    "template"
+    "bin",
+    "template",
+    "saofile.js"
   ],
   "scripts": {
     "lint": "eslint --fix .",
@@ -26,15 +26,14 @@
   },
   "homepage": "https://github.com/ant-ife/create-apfe-app#readme",
   "dependencies": {
-    "chalk": "^2.4.1",
-    "sao": "^0.22.17",
-    "superb": "^3.0.0"
+    "cac": "^6.3.12",
+    "sao": "^1.6.1"
   },
   "devDependencies": {
-    "ava": "^0.25.0",
-    "eslint": "^5.7.0",
+    "ava": "^1.0.1",
+    "eslint": "^5.12.0",
     "eslint-config-antife": "^1.0.3",
-    "np": "^3.0.4",
+    "np": "^3.1.0",
     "nyc": "^13.1.0"
   }
 }
