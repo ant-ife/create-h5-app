@@ -1,6 +1,6 @@
 {
   "name": "create-apfe-app",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "another vue app starter kit",
   "bin": "bin/cli.js",
   "files": [
