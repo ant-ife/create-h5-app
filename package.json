@@ -1,8 +1,11 @@
 {
-  "name": "create-apfe-app",
+  "name": "create-h5-app",
   "version": "1.1.1",
   "description": "another vue app starter kit",
-  "bin": "bin/cli.js",
+  "bin": {
+    "create-h5-app": "bin/cli.js",
+    "h5": "bin/cli.js"
+  },
   "files": [
     "bin",
     "template",
@@ -17,14 +20,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ant-ife/create-apfe-app.git"
+    "url": "git+https://github.com/ant-ife/create-h5-app.git"
   },
   "author": "Yuheng Zhang <zhangyuheng91@gmail.com> (http://zyhack.cn)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/ant-ife/create-apfe-app/issues"
+    "url": "https://github.com/ant-ife/create-h5-app/issues"
   },
-  "homepage": "https://github.com/ant-ife/create-apfe-app#readme",
+  "homepage": "https://github.com/ant-ife/create-h5-app#readme",
   "dependencies": {
     "cac": "^6.3.12",
     "sao": "^1.6.1"

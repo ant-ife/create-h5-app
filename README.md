@@ -1,4 +1,4 @@
-# create apfe app
+# create h5 app
 
 [中文版](./README.zh.md)
 
@@ -10,16 +10,16 @@
 [![node version][node-image]][node-url]
 [![npm download][download-image]][download-url]
 
-[npm-image]: https://img.shields.io/npm/v/create-apfe-app.svg?style=flat-square&logo=npm
-[npm-url]: https://npmjs.org/package/create-apfe-app
-[travis-image]: https://img.shields.io/travis/ant-ife/create-apfe-app.svg?style=flat-square&logo=travis
-[travis-url]: https://travis-ci.org/ant-ife/create-apfe-app
-[codecov-image]: https://img.shields.io/codecov/c/github/ant-ife/create-apfe-app.svg?style=flat-square&logo=javascript
-[codecov-url]: https://codecov.io/gh/ant-ife/create-apfe-app
+[npm-image]: https://img.shields.io/npm/v/create-h5-app.svg?style=flat-square&logo=npm
+[npm-url]: https://npmjs.org/package/create-h5-app
+[travis-image]: https://img.shields.io/travis/ant-ife/create-h5-app.svg?style=flat-square&logo=travis
+[travis-url]: https://travis-ci.org/ant-ife/create-h5-app
+[codecov-image]: https://img.shields.io/codecov/c/github/ant-ife/create-h5-app.svg?style=flat-square&logo=javascript
+[codecov-url]: https://codecov.io/gh/ant-ife/create-h5-app
 [node-image]: https://img.shields.io/badge/node.js-%3E=_8-green.svg?style=flat-square&logo=node.js
 [node-url]: http://nodejs.org/download/
-[download-image]: https://img.shields.io/npm/dm/create-apfe-app.svg?style=flat-square&logo=npm
-[download-url]: https://npmjs.org/package/create-apfe-app
+[download-image]: https://img.shields.io/npm/dm/create-h5-app.svg?style=flat-square&logo=npm
+[download-url]: https://npmjs.org/package/create-h5-app
 
 > Yet Another Vue App Starter Kit.
 
@@ -32,14 +32,14 @@ A simplified template for vue single-page applications.
 ### Create project
 
 ```bash
-$ npm i create-apfe-app -g
-$ create-apfe-app [path/to/project]
+$ npm i create-h5-app -g
+$ create-h5-app [path/to/project]
 ```
 
 For more options, please read usage:
 
 ```bash
-$ create-apfe-app --help
+$ create-h5-app --help
 ```
 
 ### Build project

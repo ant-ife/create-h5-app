@@ -1,4 +1,4 @@
-# create apfe app
+# create h5 app
 
 [English Edition](./README.md)
 
@@ -15,14 +15,14 @@
 ### 创建项目
 
 ```bash
-$ npm i create-apfe-app -g
-$ create-apfe-app [path/to/project]
+$ npm i create-h5-app -g
+$ create-h5-app [path/to/project]
 ```
 
 更多选项请查看帮助：
 
 ```bash
-$ create-apfe-app --help
+$ create-h5-app --help
 ```
 
 ### 快速构建

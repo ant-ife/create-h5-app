@@ -13,4 +13,4 @@ $ npm run dev
 $ npm run build
 ```
 
-For more details, checkout [apfe docs](https://github.com/ant-ife/create-apfe-app).
+For more details, checkout [docs](https://github.com/ant-ife/create-h5-app).
