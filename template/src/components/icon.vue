@@ -1,7 +1,9 @@
+<!-- eslint-disable vue/no-v-html -->
 <template>
   <span
     :class="['icon', 'icon-' + name, type ? ('icon-' + type) : '', clazz]"
-    v-html="html"/>
+    v-html="html"
+  />
 </template>
 
 <script>

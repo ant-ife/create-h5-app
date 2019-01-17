@@ -1,16 +1,15 @@
 <template>
   <div class="typhoon-body">
-    <Icon name="typhoon"></Icon>
-    <div class="title">{{ $t('Welcome') }} {{ getMsg }} {{ msg }}</div>
+    <Icon name="typhoon" />
+    <div class="title">
+      {{ $t('Welcome') }} {{ getMsg }} {{ msg }}
+    </div>
   </div>
 </template>
 
 <script>
 import { mapGetters, mapActions } from 'vuex'
 export default {
-  created () {
-    this.getTest()
-  },
   data () {
     return {
       msg: 'typhoon!',
@@ -20,6 +19,9 @@ export default {
     ...mapGetters([
       'getMsg',
     ]),
+  },
+  created () {
+    this.getTest()
   },
   methods: {
     ...mapActions([
