@@ -3,6 +3,8 @@ const path = require('path')
 const sao = require('sao')
 const cli = require('cac')()
 
+require('./checkUpdate')()
+
 cli
   .command('<target-folder>', 'Generate a new project to target folder')
   .option(
