@@ -26,6 +26,10 @@ cli
     await app.run().catch(sao.handleError)
   })
 
+cli.on('command:!', () => {
+  if (!cli.args.length) cli.outputHelp()
+})
+
 cli.help()
 cli.version(require('../package').version)
 
