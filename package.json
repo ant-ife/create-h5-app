@@ -16,7 +16,7 @@
     "test": "npm run lint && ava --verbose test",
     "test:snapshot": "ava --verbose --update-snapshots test",
     "cov": "npm run lint && nyc --reporter=lcov --reporter=text ava test",
-    "auto:publish": "np --yolo"
+    "prepublishOnly": "np --yolo --no-publish"
   },
   "repository": {
     "type": "git",
