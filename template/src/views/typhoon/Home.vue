@@ -1,5 +1,5 @@
 <template>
-  <div class="typhoon-body">
+  <div class="body">
     <Icon name="typhoon" />
     <div class="title">
       {{ $t('Welcome') }} {{ getMsg }} {{ msg }}
@@ -30,3 +30,20 @@ export default {
   },
 }
 </script>
+
+<style lang="less" scoped>
+.body {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 4rem;
+  .icon svg {
+    width: 2rem;
+    height: 2rem;
+  }
+  .title {
+    margin-top: .5rem;
+    color: #749cef;
+  }
+}
+</style>

@@ -3,7 +3,7 @@ import App from 'views'
 import router from 'router/typhoon'
 import store from 'store/typhoon'
 import Icon from 'components/icon'
-import 'styles/typhoon'
+import 'styles'
 import {
   setupLang,
   i18n,

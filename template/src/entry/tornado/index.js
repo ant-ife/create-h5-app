@@ -3,7 +3,7 @@ import App from 'views'
 import router from 'router/tornado'
 import store from 'store/tornado'
 import Icon from 'components/icon'
-import 'styles/tornado'
+import 'styles'
 import {
   setupLang,
   i18n,
