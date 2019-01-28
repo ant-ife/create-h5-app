@@ -11,16 +11,6 @@
 import { mapState, mapActions } from 'vuex'
 import { loadLanguageAsync } from 'utils/i18n'
 export default {
-  data () {
-    return {
-      msg: 'tornado!',
-    }
-  },
-  computed: {
-    ...mapState([
-      'test',
-    ]),
-  },
   created () {
     setTimeout(() => {
       loadLanguageAsync('tornado', 'zh-CN')
@@ -28,6 +18,16 @@ export default {
         loadLanguageAsync('tornado', 'en-US')
       }, 2000)
     }, 2000)
+  },
+  data () {
+    return {
+      msg: this.$t('msg'),
+    }
+  },
+  computed: {
+    ...mapState([
+      'test',
+    ]),
   },
   methods: {
     ...mapActions([
