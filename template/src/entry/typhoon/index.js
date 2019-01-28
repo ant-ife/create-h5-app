@@ -2,8 +2,8 @@ import Vue from 'vue'
 import App from 'views'
 import router from 'router/typhoon'
 import store from 'store/typhoon'
-import Icon from 'components/icon'
-import 'styles/typhoon'
+import Icon from 'components/Icon'
+import 'styles'
 import {
   setupLang,
   i18n,

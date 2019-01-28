@@ -26,3 +26,17 @@ export default {
   },
 }
 </script>
+
+<style lang="less" scoped>
+.icon {
+  display: inline-block;
+  fill: currentColor;
+  vertical-align: middle;
+
+  svg {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+}
+</style>
