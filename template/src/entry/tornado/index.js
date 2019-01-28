@@ -2,7 +2,7 @@ import Vue from 'vue'
 import App from 'views'
 import router from 'router/tornado'
 import store from 'store/tornado'
-import Icon from 'components/icon'
+import Icon from 'components/Icon'
 import 'styles'
 import {
   setupLang,
