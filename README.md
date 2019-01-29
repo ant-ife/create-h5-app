@@ -133,3 +133,4 @@ This is our integrated set of test and mock solutions. https://macacajs.github.i
 
 ## License
 
+[MIT](http://opensource.org/licenses/MIT)
