@@ -1,3 +1,12 @@
+## [1.1.11](https://github.com/ant-ife/create-h5-app/compare/v1.1.10...v1.1.11) (2019-02-14)
+
+
+### Features
+
+* **lint:** add pre-commit hook ([9553c7a](https://github.com/ant-ife/create-h5-app/commit/9553c7a))
+
+
+
 ## [1.1.10](https://github.com/ant-ife/create-h5-app/compare/v1.1.9...v1.1.10) (2019-02-14)
 
 
