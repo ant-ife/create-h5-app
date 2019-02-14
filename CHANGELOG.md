@@ -1,3 +1,7 @@
+## [1.1.12](https://github.com/ant-ife/create-h5-app/compare/v1.1.11...v1.1.12) (2019-02-14)
+
+
+
 ## [1.1.11](https://github.com/ant-ife/create-h5-app/compare/v1.1.10...v1.1.11) (2019-02-14)
 
 
