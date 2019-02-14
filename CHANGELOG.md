@@ -1,3 +1,12 @@
+## [1.1.10](https://github.com/ant-ife/create-h5-app/compare/v1.1.9...v1.1.10) (2019-02-14)
+
+
+### Features
+
+* **babel:** add polyfill ([529db96](https://github.com/ant-ife/create-h5-app/commit/529db96))
+
+
+
 ## [1.1.9](https://github.com/ant-ife/create-h5-app/compare/v1.1.7...v1.1.9) (2019-02-13)
 
 
