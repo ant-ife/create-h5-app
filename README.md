@@ -5,21 +5,9 @@
 ---
 
 [![NPM version][npm-image]][npm-url]
-[![build status][travis-image]][travis-url]
-[![Test coverage][codecov-image]][codecov-url]
-[![node version][node-image]][node-url]
-[![npm download][download-image]][download-url]
-
-[npm-image]: https://img.shields.io/npm/v/create-h5-app.svg?style=flat-square&logo=npm
-[npm-url]: https://npmjs.org/package/create-h5-app
-[travis-image]: https://img.shields.io/travis/ant-ife/create-h5-app.svg?style=flat-square&logo=travis
-[travis-url]: https://travis-ci.org/ant-ife/create-h5-app
-[codecov-image]: https://img.shields.io/codecov/c/github/ant-ife/create-h5-app.svg?style=flat-square&logo=javascript
-[codecov-url]: https://codecov.io/gh/ant-ife/create-h5-app
-[node-image]: https://img.shields.io/badge/node.js-%3E=_8-green.svg?style=flat-square&logo=node.js
-[node-url]: http://nodejs.org/download/
-[download-image]: https://img.shields.io/npm/dm/create-h5-app.svg?style=flat-square&logo=npm
-[download-url]: https://npmjs.org/package/create-h5-app
+[![Build status][travis-image]][travis-url]
+[![Coverage status][codecov-image]][codecov-url]
+[![Dependency status][daviddm-image]][daviddm-url]
 
 > Yet Another Vue App Starter Kit.
 
@@ -134,3 +122,13 @@ This is our integrated set of test and mock solutions. https://macacajs.github.i
 ## License
 
 [MIT](http://opensource.org/licenses/MIT)
+
+[npm-image]: https://img.shields.io/npm/v/create-h5-app.svg?style=flat-square&logo=npm
+[npm-url]: https://npmjs.org/package/create-h5-app
+[travis-image]: https://img.shields.io/travis/ant-ife/create-h5-app.svg?style=flat-square&logo=travis
+[travis-url]: https://travis-ci.org/ant-ife/create-h5-app
+[codecov-image]: https://img.shields.io/codecov/c/github/ant-ife/create-h5-app.svg?style=flat-square&logo=javascript
+[codecov-url]: https://codecov.io/gh/ant-ife/create-h5-app
+[daviddm-image]: https://david-dm.org/ant-ife/create-h5-app.svg?style=flat-square
+[daviddm-url]: https://david-dm.org/ant-ife/create-h5-app
+
