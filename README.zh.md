@@ -69,7 +69,7 @@ $ npm run test
 <p align="center">
   <img
     alt="vue-webpack-starter-kit"
-    src="https://ws1.sinaimg.cn/large/796b664dly1fw96unjqgfj218o0jydoc.jpg"
+    src="https://user-images.githubusercontent.com/2139038/52779036-54513280-3082-11e9-8b4e-0744b1d12e17.png"
     width="800"
   />
 </p>
@@ -81,17 +81,17 @@ $ npm run test
 <p align="center">
   <img
     alt="vue-webpack-starter-kit"
-    src="https://ws1.sinaimg.cn/large/796b664dly1fw97hq3u3hj220i16awqe.jpg"
+    src="https://user-images.githubusercontent.com/2139038/52778840-db51db00-3081-11e9-9cf8-f0d3c25905ab.png"
     width="800"
   />
 </p>
 
-除 vue-package 和 vendors。
+除 vue-package。
 
 <p align="center">
   <img
     alt="vue-webpack-starter-kit"
-    src="https://ws1.sinaimg.cn/large/796b664dly1fw97iici6uj220k162gxi.jpg"
+    src="https://user-images.githubusercontent.com/2139038/52778916-0f2d0080-3082-11e9-9b95-5c0adeddedb2.png"
     width="800"
   />
 </p>
