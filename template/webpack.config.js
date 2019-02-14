@@ -25,7 +25,6 @@ const entryPath = path.join(__dirname, 'src/entry')
 const entries = fs.readdirSync(entryPath)
   .reduce((o, filename) => {
     o[filename] = [
-      // 'core-js/fn/promise',
       path.join(entryPath, filename, 'index.js'),
     ]
     return o

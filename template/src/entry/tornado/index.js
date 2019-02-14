@@ -1,3 +1,4 @@
+import '@babel/polyfill'
 import Vue from 'vue'
 import App from 'views'
 import router from 'router/tornado'
