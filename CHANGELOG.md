@@ -1,3 +1,13 @@
+## [1.1.13](https://github.com/ant-ife/create-h5-app/compare/v1.1.12...v1.1.13) (2019-02-20)
+
+
+### Features
+
+* add overlay config ([#15](https://github.com/ant-ife/create-h5-app/issues/15)) ([a59d722](https://github.com/ant-ife/create-h5-app/commit/a59d722))
+* update stylelint config ([4fa2e18](https://github.com/ant-ife/create-h5-app/commit/4fa2e18))
+
+
+
 ## [1.1.12](https://github.com/ant-ife/create-h5-app/compare/v1.1.11...v1.1.12) (2019-02-14)
 
 
