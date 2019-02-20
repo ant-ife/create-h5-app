@@ -162,6 +162,7 @@ module.exports = (env, argv) => {
     devServer: {
       historyApiFallback: true,
       hot: true,
+      overlay: true,
       contentBase: './',
       stats: 'errors-only',
       open: process.env.NODE_ENV !== 'test',
