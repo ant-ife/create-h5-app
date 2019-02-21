@@ -7,7 +7,8 @@ const VueLoaderPlugin = require('vue-loader/lib/plugin')
 const CopyWebpackPlugin = require('copy-webpack-plugin')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
-const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin
+const BundleAnalyzerPlugin = require('webpack-bundle-analyzer')
+  .BundleAnalyzerPlugin
 const DataHub = require('macaca-datahub')
 const datahub = new DataHub()
 
@@ -22,20 +23,16 @@ const alias = fs.readdirSync(resolve('src')).reduce((memo, f) => {
 
 const entryPath = path.join(__dirname, 'src/entry')
 
-const entries = fs.readdirSync(entryPath)
-  .reduce((o, filename) => {
-    o[filename] = [
-      path.join(entryPath, filename, 'index.js'),
-    ]
-    return o
-  }, {})
+const entries = fs.readdirSync(entryPath).reduce((o, filename) => {
+  o[filename] = [path.join(entryPath, filename, 'index.js')]
+  return o
+}, {})
 
 module.exports = (env, argv) => {
   const isProduction = argv.mode === 'production'
   const publicPath = isProduction ? '' : '/'
 
   const webpackConfig = {
-
     stats: {
       publicPath: true,
       chunks: false,
@@ -52,8 +49,12 @@ module.exports = (env, argv) => {
     output: {
       path: path.join(__dirname, 'dist/'),
       publicPath,
-      filename: isProduction ? 'asset/[name].[chunkhash].js' : 'asset/[name].js',
-      chunkFilename: isProduction ? 'asset/[name].[chunkhash].js' : 'asset/[name].js',
+      filename: isProduction
+        ? 'asset/[name].[chunkhash].js'
+        : 'asset/[name].js',
+      chunkFilename: isProduction
+        ? 'asset/[name].[chunkhash].js'
+        : 'asset/[name].js',
     },
 
     resolve: {
@@ -61,9 +62,7 @@ module.exports = (env, argv) => {
         ...alias,
         vue$: 'vue/dist/vue.esm.js',
       },
-      extensions: [
-        '.js', '.vue', '.json', '.less',
-      ],
+      extensions: ['.js', '.vue', '.json', '.less'],
     },
 
     module: {
@@ -71,14 +70,13 @@ module.exports = (env, argv) => {
         {
           test: /\.vue$/,
           loader: 'vue-loader',
-        }, {
+        },
+        {
           test: /\.js$/,
-          exclude: file => (
-            /node_modules/.test(file) &&
-            !/\.vue\.js/.test(file)
-          ),
+          exclude: file => /node_modules/.test(file) && !/\.vue\.js/.test(file),
           loader: 'babel-loader',
-        }, {
+        },
+        {
           test: /\.less$/,
           use: [
             isProduction ? MiniCssExtractPlugin.loader : 'vue-style-loader',
@@ -92,14 +90,16 @@ module.exports = (env, argv) => {
               },
             },
           ],
-        }, {
+        },
+        {
           test: /\.svg$/,
           loader: 'svg-sprite-loader',
           include: /\/icon\/.*svg/,
           options: {
             symbolId: 'icon-[name]',
           },
-        }, {
+        },
+        {
           test: /\.(png|jpe?g|gif|svg)(\?.*)?$/,
           loader: 'url-loader',
           exclude: /\/icon\/.*svg/,
@@ -108,13 +108,16 @@ module.exports = (env, argv) => {
             fallback: {
               loader: 'file-loader',
               options: {
-                name: isProduction ? '[name].[hash:7].[ext]' : '[name][hash].[ext]',
+                name: isProduction
+                  ? '[name].[hash:7].[ext]'
+                  : '[name][hash].[ext]',
                 publicPath: isProduction ? '../static' : '',
                 outputPath: isProduction ? 'static' : '',
               },
             },
           },
-        }, {
+        },
+        {
           test: /\.(woff2?|eot|ttf|otf)(\?.*)?$/,
           loader: 'url-loader',
           options: {
@@ -122,7 +125,9 @@ module.exports = (env, argv) => {
             fallback: {
               loader: 'file-loader',
               options: {
-                name: isProduction ? '[name].[hash:7].[ext]' : '[name][hash].[ext]',
+                name: isProduction
+                  ? '[name].[hash:7].[ext]'
+                  : '[name][hash].[ext]',
                 publicPath: isProduction ? '../font' : '',
                 outputPath: isProduction ? 'font' : '',
               },
@@ -135,20 +140,25 @@ module.exports = (env, argv) => {
     plugins: [
       new VueLoaderPlugin(),
       new MiniCssExtractPlugin({
-        filename: isProduction ? 'asset/[name].[contenthash].css' : 'asset/[name].css',
+        filename: isProduction
+          ? 'asset/[name].[contenthash].css'
+          : 'asset/[name].css',
       }),
-      ...Object.keys(entries).map(name =>
-        new HtmlWebpackPlugin({
-          filename: `${name}.html`,
-          template: `!!awesome-ejs-compiled-loader!src/entry/${name}/index.html`,
-          inject: true,
-          minify: isProduction ? {
-            removeComments: true,
-            collapseWhitespace: true,
-            minifyJS: true,
-          } : {},
-          chunks: [ name, 'runtime', 'commons', 'vendors', 'vue-package', `group-${name}-` ],
-        })
+      ...Object.keys(entries).map(
+        name =>
+          new HtmlWebpackPlugin({
+            filename: `${name}.html`,
+            template: `!!awesome-ejs-compiled-loader!src/entry/${name}/index.html`,
+            inject: true,
+            minify: isProduction
+              ? {
+                removeComments: true,
+                collapseWhitespace: true,
+                minifyJS: true,
+              }
+              : {},
+            chunks: [name, 'runtime', 'commons', 'vendors', 'vue-package'],
+          })
       ),
       new CopyWebpackPlugin([
         {
@@ -209,4 +219,3 @@ module.exports = (env, argv) => {
 
   return webpackConfig
 }
-
