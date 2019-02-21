@@ -1,3 +1,12 @@
+## [1.1.15](https://github.com/ant-ife/create-h5-app/compare/v1.1.14...v1.1.15) (2019-02-21)
+
+
+### Bug Fixes
+
+* remove useless chunks config ([19b362a](https://github.com/ant-ife/create-h5-app/commit/19b362a))
+
+
+
 ## [1.1.14](https://github.com/ant-ife/create-h5-app/compare/v1.1.13...v1.1.14) (2019-02-21)
 
 
