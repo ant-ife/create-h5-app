@@ -1,3 +1,12 @@
+## [1.1.14](https://github.com/ant-ife/create-h5-app/compare/v1.1.13...v1.1.14) (2019-02-21)
+
+
+### Bug Fixes
+
+* add `@babel/runtime` as production dependency ([#16](https://github.com/ant-ife/create-h5-app/issues/16)) ([16f2982](https://github.com/ant-ife/create-h5-app/commit/16f2982))
+
+
+
 ## [1.1.13](https://github.com/ant-ife/create-h5-app/compare/v1.1.12...v1.1.13) (2019-02-20)
 
 
