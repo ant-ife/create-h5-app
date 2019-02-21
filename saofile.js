@@ -1,9 +1,9 @@
 module.exports = {
-  prompts () {
+  prompts() {
     return [
       {
         name: 'name',
-        message: 'What\'s the name of your new project',
+        message: "What's the name of your new project",
         default: this.outFolder,
         filter: val => val.toLowerCase(),
       },
@@ -13,10 +13,7 @@ module.exports = {
     {
       type: 'add',
       files: '**',
-      transformInclude: [
-        'package*.json',
-        'README.md',
-      ],
+      transformInclude: ['package*.json', 'README.md'],
     },
     {
       type: 'move',
@@ -28,7 +25,7 @@ module.exports = {
       },
     },
   ],
-  async completed () {
+  async completed() {
     await this.gitInit()
     await this.npmInstall()
     this.showProjectTips()
