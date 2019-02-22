@@ -19,9 +19,19 @@ A simplified template for vue single-page applications.
 
 ### Create project
 
+- use [apfe-cli](https://github.com/ant-ife/apfe-cli)
+
+```bash
+$ npm i apfe-cli -g
+$ apfe create h5-app path/to/project
+$ apfe create h5-app path/to/project -c mynpm # use specified npm client
+```
+
+- use standalone cli
+
 ```bash
 $ npm i create-h5-app -g
-$ create-h5-app [path/to/project]
+$ create-h5-app path/to/project
 ```
 
 For more options, please read usage:
