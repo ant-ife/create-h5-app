@@ -5,7 +5,6 @@ const Home = () => import(/* webpackChunkName: "router-typhoon-home" */ 'views/t
 Vue.use(Router)
 
 const router = new Router({
-  saveScrollPosition: true,
   routes: [
     {
       path: '/',
