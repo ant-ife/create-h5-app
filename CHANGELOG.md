@@ -1,3 +1,14 @@
+# [1.2.0](https://github.com/ant-ife/create-h5-app/compare/v1.1.16...v1.2.0) (2019-03-20)
+
+
+### Features
+
+* remove saveScrollPosition ([#19](https://github.com/ant-ife/create-h5-app/issues/19)) ([9164152](https://github.com/ant-ife/create-h5-app/commit/9164152))
+* update prettierrc config ([d745bd8](https://github.com/ant-ife/create-h5-app/commit/d745bd8))
+* use core-js@3 ([#20](https://github.com/ant-ife/create-h5-app/issues/20)) ([7986ddd](https://github.com/ant-ife/create-h5-app/commit/7986ddd))
+
+
+
 ## [1.1.16](https://github.com/ant-ife/create-h5-app/compare/v1.1.15...v1.1.16) (2019-02-21)
 
 
