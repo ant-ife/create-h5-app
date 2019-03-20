@@ -1,3 +1,12 @@
+## [1.2.1](https://github.com/ant-ife/create-h5-app/compare/v1.2.0...v1.2.1) (2019-03-20)
+
+
+### Features
+
+* add prettier ([037fc7d](https://github.com/ant-ife/create-h5-app/commit/037fc7d))
+
+
+
 # [1.2.0](https://github.com/ant-ife/create-h5-app/compare/v1.1.16...v1.2.0) (2019-03-20)
 
 
