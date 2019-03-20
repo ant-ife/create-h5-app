@@ -1,14 +1,15 @@
-import '@babel/polyfill'
+// see https://github.com/zloirock/core-js
+import 'core-js/features/array'
+import 'core-js/features/promise'
+import 'regenerator-runtime/runtime'
+
 import Vue from 'vue'
 import App from 'views'
 import router from 'router/tornado'
 import store from 'store/tornado'
 import Icon from 'components/Icon'
 import 'styles'
-import {
-  setupLang,
-  i18n,
-} from 'utils/i18n'
+import { setupLang, i18n } from 'utils/i18n'
 
 const requireAll = requireContext => requireContext.keys().map(requireContext)
 const req = require.context('assets/tornado/icon', false, /\.svg$/)

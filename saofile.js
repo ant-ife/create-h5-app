@@ -14,6 +14,10 @@ module.exports = {
       type: 'add',
       files: '**',
       transformInclude: ['package*.json', 'README.md'],
+      filters: {
+        // only for test case, npm will ignore .gitignore
+        '.gitignore': false,
+      },
     },
     {
       type: 'move',
