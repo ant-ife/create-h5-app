@@ -1,32 +1,26 @@
 <template>
   <div class="body">
     <Icon name="typhoon" />
-    <div class="title">
-      {{ $t('Welcome') }} {{ getMsg }} {{ msg }}
-    </div>
+    <div class="title">{{ $t('Welcome') }} {{ getMsg }} {{ msg }}</div>
   </div>
 </template>
 
 <script>
 import { mapGetters, mapActions } from 'vuex'
 export default {
-  data () {
+  data() {
     return {
       msg: 'typhoon!',
     }
   },
   computed: {
-    ...mapGetters([
-      'getMsg',
-    ]),
+    ...mapGetters(['getMsg']),
   },
-  created () {
+  created() {
     this.getTest()
   },
   methods: {
-    ...mapActions([
-      'getTest',
-    ]),
+    ...mapActions(['getTest']),
   },
 }
 </script>
@@ -42,7 +36,7 @@ export default {
     height: 2rem;
   }
   .title {
-    margin-top: .5rem;
+    margin-top: 0.5rem;
     color: #749cef;
   }
 }

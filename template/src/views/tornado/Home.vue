@@ -1,9 +1,7 @@
 <template>
   <div class="body">
     <Icon name="tornado" />
-    <div class="title">
-      {{ $t('Welcome') }}{{ test }}{{ msg }}
-    </div>
+    <div class="title">{{ $t('Welcome') }}{{ test }}{{ msg }}</div>
   </div>
 </template>
 
@@ -12,26 +10,22 @@ import { mapState, mapActions } from 'vuex'
 import { loadLanguageAsync } from 'utils/i18n'
 import { sleep } from 'utils'
 export default {
-  data () {
+  data() {
     return {
       msg: this.$t('msg'),
     }
   },
   computed: {
-    ...mapState([
-      'test',
-    ]),
+    ...mapState(['test']),
   },
-  async created () {
+  async created() {
     await sleep(2000)
     await loadLanguageAsync('tornado', 'zh-CN')
     await sleep(2000)
     await loadLanguageAsync('tornado', 'en-US')
   },
   methods: {
-    ...mapActions([
-      'getTest',
-    ]),
+    ...mapActions(['getTest']),
   },
 }
 </script>
@@ -47,7 +41,7 @@ export default {
     height: 2rem;
   }
   .title {
-    margin-top: .5rem;
+    margin-top: 0.5rem;
     color: #aad290;
   }
 }

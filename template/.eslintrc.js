@@ -1,7 +1,9 @@
 module.exports = {
   extends: [
-    'eslint-config-antife',
+    'antife',
     'plugin:vue/recommended',
+    'prettier',
+    'prettier/vue',
   ],
   rules: {
     'vue/require-prop-types': 0,
