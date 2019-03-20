@@ -1,4 +1,5 @@
 reports
+.DS_Store
 
 # Created by https://www.gitignore.io/api/vim,node,code,webstorm,sublimetext
 
