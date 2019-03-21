@@ -15,15 +15,15 @@
     "build:report": "npm run build --report"
   },
   "dependencies": {
-    "@babel/runtime": "^7.2.0",
+    "@babel/runtime": "^7.4.0",
     "core-js": "^3.0.0",
-    "regenerator-runtime": "^0.13.1"
+    "regenerator-runtime": "^0.13.2"
   },
   "devDependencies": {
-    "@babel/core": "^7.2.2",
+    "@babel/core": "^7.4.0",
     "@babel/plugin-syntax-dynamic-import": "^7.2.0",
-    "@babel/plugin-transform-runtime": "^7.2.0",
-    "@babel/preset-env": "^7.2.3",
+    "@babel/plugin-transform-runtime": "^7.4.0",
+    "@babel/preset-env": "^7.4.0",
     "autoprefixer": "^9.4.4",
     "awesome-ejs-compiled-loader": "^1.0.0",
     "babel-loader": "^8.0.5",
