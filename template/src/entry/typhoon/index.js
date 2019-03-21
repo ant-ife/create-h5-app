@@ -1,8 +1,3 @@
-// see https://github.com/zloirock/core-js
-import 'core-js/features/array'
-import 'core-js/features/promise'
-import 'regenerator-runtime/runtime'
-
 import Vue from 'vue'
 import App from 'views'
 import router from 'router/typhoon'

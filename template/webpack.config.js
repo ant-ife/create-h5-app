@@ -12,7 +12,7 @@ const BundleAnalyzerPlugin = require('webpack-bundle-analyzer')
 const DataHub = require('macaca-datahub')
 const datahub = new DataHub()
 
-function resolve (dir) {
+function resolve(dir) {
   return path.join(__dirname, dir)
 }
 
@@ -24,7 +24,10 @@ const alias = fs.readdirSync(resolve('src')).reduce((memo, f) => {
 const entryPath = path.join(__dirname, 'src/entry')
 
 const entries = fs.readdirSync(entryPath).reduce((o, filename) => {
-  o[filename] = [path.join(entryPath, filename, 'index.js')]
+  o[filename] = [
+    resolve('src/utils/polyfill.js'),
+    path.join(entryPath, filename, 'index.js'),
+  ]
   return o
 }, {})
 
@@ -152,10 +155,10 @@ module.exports = (env, argv) => {
             inject: true,
             minify: isProduction
               ? {
-                removeComments: true,
-                collapseWhitespace: true,
-                minifyJS: true,
-              }
+                  removeComments: true,
+                  collapseWhitespace: true,
+                  minifyJS: true,
+                }
               : {},
             chunks: [name, 'runtime', 'commons', 'vendors', 'vue-package'],
           })
@@ -173,6 +176,7 @@ module.exports = (env, argv) => {
       historyApiFallback: true,
       hot: true,
       overlay: true,
+      host: '0.0.0.0',
       contentBase: './',
       stats: 'errors-only',
       open: process.env.NODE_ENV !== 'test',
