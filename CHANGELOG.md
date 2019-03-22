@@ -1,3 +1,12 @@
+## [1.2.5](https://github.com/ant-ife/create-h5-app/compare/v1.2.4...v1.2.5) (2019-03-22)
+
+
+### Features
+
+* update template ([#22](https://github.com/ant-ife/create-h5-app/issues/22)) ([0a98234](https://github.com/ant-ife/create-h5-app/commit/0a98234))
+
+
+
 ## [1.2.4](https://github.com/ant-ife/create-h5-app/compare/v1.2.3...v1.2.4) (2019-03-21)
 
 
