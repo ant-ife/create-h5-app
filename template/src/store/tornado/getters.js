@@ -1,5 +1,5 @@
 export default {
-  getTest: state => {
-    return state.test
+  tripleBang: state => {
+    return state.symbol.repeat(3)
   },
 }

@@ -1,6 +1,6 @@
 import * as types from './mutation-types'
 export default {
-  [types.TEST] (state, result) {
-    state.test = result
+  [types.SPACE](state, res) {
+    state.space = res.message
   },
 }

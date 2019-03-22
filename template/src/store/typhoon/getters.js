@@ -1,5 +1,5 @@
 export default {
-  getMsg: state => {
-    return state.test.message
+  tripleBang: state => {
+    return state.symbol.repeat(3)
   },
 }
