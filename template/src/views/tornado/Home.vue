@@ -1,31 +1,39 @@
 <template>
   <div class="body">
-    <Icon name="tornado" />
-    <div class="title">{{ $t('Welcome') }}{{ test }}{{ msg }}</div>
+    <Icon name="tornado"></Icon>
+    <div class="title">{{ $t('welcome') }}{{ space }}{{ appName }}{{ tripleBang }}</div>
   </div>
 </template>
 
 <script>
-import { mapState, mapActions } from 'vuex'
+import { mapState, mapActions, mapGetters } from 'vuex'
 import { loadLanguageAsync } from 'utils/i18n'
 import { sleep } from 'utils'
 export default {
-  data() {
+  async created () {
+    await this.getSpace()
+    await sleep(1000)
+    await loadLanguageAsync('tornado', 'zh-CN')
+    await sleep(1000)
+    await loadLanguageAsync('tornado', 'en-US')
+  },
+  data () {
     return {
-      msg: this.$t('msg'),
+      appName: this.$t('appName'),
     }
   },
   computed: {
-    ...mapState(['test']),
-  },
-  async created() {
-    await sleep(2000)
-    await loadLanguageAsync('tornado', 'zh-CN')
-    await sleep(2000)
-    await loadLanguageAsync('tornado', 'en-US')
+    ...mapState([
+      'space',
+    ]),
+    ...mapGetters([
+      'tripleBang',
+    ]),
   },
   methods: {
-    ...mapActions(['getTest']),
+    ...mapActions([
+      'getSpace',
+    ]),
   },
 }
 </script>
@@ -36,13 +44,16 @@ export default {
   align-items: center;
   flex-direction: column;
   margin-top: 4rem;
-  .icon svg {
-    width: 2rem;
-    height: 2rem;
-  }
   .title {
-    margin-top: 0.5rem;
+    margin-top: .5rem;
     color: #aad290;
+    font-size: .5rem;
   }
+}
+</style>
+
+<style lang="less">
+.icon-tornado svg {
+  width: 2rem;
 }
 </style>

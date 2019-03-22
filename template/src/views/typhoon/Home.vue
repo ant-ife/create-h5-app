@@ -1,26 +1,33 @@
 <template>
   <div class="body">
-    <Icon name="typhoon" />
-    <div class="title">{{ $t('Welcome') }} {{ getMsg }} {{ msg }}</div>
+    <Icon name="typhoon"></Icon>
+    <div class="title">{{ $t('welcome') }}{{ space }}{{ appName }}{{ tripleBang }}</div>
   </div>
 </template>
 
 <script>
-import { mapGetters, mapActions } from 'vuex'
+import { mapState, mapGetters, mapActions } from 'vuex'
 export default {
-  data() {
+  created () {
+    this.getSpace()
+  },
+  data () {
     return {
-      msg: 'typhoon!',
+      appName: this.$t('appName'),
     }
   },
   computed: {
-    ...mapGetters(['getMsg']),
-  },
-  created() {
-    this.getTest()
+    ...mapState([
+      'space',
+    ]),
+    ...mapGetters([
+      'tripleBang',
+    ]),
   },
   methods: {
-    ...mapActions(['getTest']),
+    ...mapActions([
+      'getSpace',
+    ]),
   },
 }
 </script>
@@ -31,13 +38,16 @@ export default {
   align-items: center;
   flex-direction: column;
   margin-top: 4rem;
-  .icon svg {
-    width: 2rem;
-    height: 2rem;
-  }
   .title {
-    margin-top: 0.5rem;
+    margin-top: .5rem;
     color: #749cef;
+    font-size: .5rem;
   }
+}
+</style>
+
+<style lang="less">
+.icon-typhoon svg {
+  width: 2rem;
 }
 </style>

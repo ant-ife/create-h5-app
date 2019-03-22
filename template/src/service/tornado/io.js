@@ -3,13 +3,13 @@ import request from 'utils/request.js'
 let baseUrl = 'server'
 
 if (process.env.NODE_ENV === 'development') {
-  baseUrl = 'http://localhost:5678/data/vue-webpack/'
+  baseUrl = `${location.protocol}//${location.hostname}:5678/data/vue-webpack/`
 }
 
 export default {
-  async init () {
+  async init() {
     /* istanbul ignore next */
-    return request(`${baseUrl}api/init.json`, 'POST', {
+    return request(`${baseUrl}init.json`, 'POST', {
       foo: 'bar',
     })
   },

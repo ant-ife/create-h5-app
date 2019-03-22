@@ -5,7 +5,8 @@ import mutations from './mutations'
 import getters from './getters'
 
 const state = {
-  test: ' ',
+  space: '',
+  symbol: '!',
 }
 
 Vue.use(Vuex)

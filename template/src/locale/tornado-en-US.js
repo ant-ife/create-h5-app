@@ -1,4 +1,4 @@
 export default {
-  Welcome: 'Welcome to',
-  msg: 'create-h5-app',
+  welcome: 'Welcome to',
+  appName: 'create-h5-app',
 }
