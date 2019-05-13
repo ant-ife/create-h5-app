@@ -92,6 +92,13 @@ module.exports = (env, argv) => {
                 noIeCompat: true,
               },
             },
+            {
+              loader: 'sass-resources-loader',
+              options: {
+                sourceMap: !isProduction,
+                resources: path.join(__dirname, 'src/styles/*.less'),
+              },
+            },
           ],
         },
         {

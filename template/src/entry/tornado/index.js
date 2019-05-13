@@ -3,7 +3,6 @@ import App from 'views'
 import router from 'router/tornado'
 import store from 'store/tornado'
 import Icon from 'components/Icon'
-import 'styles'
 import { setupLang, i18n } from 'utils/i18n'
 
 const requireAll = requireContext => requireContext.keys().map(requireContext)
