@@ -1,7 +1,9 @@
 <template>
   <div class="body">
     <Icon name="tornado"></Icon>
-    <div class="title">{{ $t('welcome') }}{{ space }}{{ appName }}{{ tripleBang }}</div>
+    <div class="title">
+      {{ $t('welcome') }}{{ space }}{{ appName }}{{ tripleBang }}
+    </div>
   </div>
 </template>
 
@@ -10,30 +12,24 @@ import { mapState, mapActions, mapGetters } from 'vuex'
 import { loadLanguageAsync } from 'utils/i18n'
 import { sleep } from 'utils'
 export default {
-  async created () {
+  data() {
+    return {
+      appName: this.$t('appName'),
+    }
+  },
+  computed: {
+    ...mapState(['space']),
+    ...mapGetters(['tripleBang']),
+  },
+  async created() {
     await this.getSpace()
     await sleep(1000)
     await loadLanguageAsync('tornado', 'zh-CN')
     await sleep(1000)
     await loadLanguageAsync('tornado', 'en-US')
   },
-  data () {
-    return {
-      appName: this.$t('appName'),
-    }
-  },
-  computed: {
-    ...mapState([
-      'space',
-    ]),
-    ...mapGetters([
-      'tripleBang',
-    ]),
-  },
   methods: {
-    ...mapActions([
-      'getSpace',
-    ]),
+    ...mapActions(['getSpace']),
   },
 }
 </script>
@@ -45,9 +41,9 @@ export default {
   flex-direction: column;
   margin-top: 4rem;
   .title {
-    margin-top: .5rem;
+    margin-top: 0.5rem;
     color: #aad290;
-    font-size: .5rem;
+    font-size: 0.5rem;
   }
 }
 </style>

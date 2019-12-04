@@ -8,9 +8,6 @@
 <script>
 import { mapState, mapGetters, mapActions } from 'vuex'
 export default {
-  created () {
-    this.getSpace()
-  },
   data () {
     return {
       appName: this.$t('appName'),
@@ -23,6 +20,9 @@ export default {
     ...mapGetters([
       'tripleBang',
     ]),
+  },
+  created () {
+    this.getSpace()
   },
   methods: {
     ...mapActions([
