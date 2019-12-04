@@ -8,7 +8,7 @@
     "clean:test": "rm -rf reports screenshots coverage",
     "dev": "cross-env NODE_ENV=development webpack-dev-server --mode development",
     "dev:test": "cross-env NODE_ENV=test webpack-dev-server --mode development",
-    "lint": "eslint --fix . --ext .vue,.jsx,.js && stylelint --fix 'src/**/*.less' -s less",
+    "lint": "eslint --fix . --ext .vue,.jsx,.js && stylelint --fix 'src/**/*.{less,vue}' -s less --custom-syntax postcss-html",
     "tar": "tar czf dist.tgz dist && rm -rf dist",
     "build": " npm run build:clean && cross-env NODE_ENV=production webpack -p --mode production && npm run tar",
     "build:clean": "rm -rf dist",
